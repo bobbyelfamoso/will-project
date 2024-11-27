@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="cybercycle.png" type="image/png" sizes="16x16">
+        <link rel="icon" href="cybercycle.png" type="image/png" sizes="32x32">
+        <link rel="icon" href="cybercycle.png" type="image/png" sizes="48x48">
+        <link rel="apple-touch-icon" href="cybercycle.png" sizes="180x180">
+        <title>CyberCycle</title>
+  <link rel="stylesheet" href="background.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo-container">
+        <img src="cybercycle.png" alt="CyberCycle Logo" class="logo-img">
+        <h1 class="logo">Cyber<span>Cycle</span></h1>
+      </div>
+
+      <!-- Ajouter juste avant la nav -->
+<div class="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#services" data-translate="services">Services</a></li>
+          <li><a href="#about" data-translate="about">About</a></li>
+          <li><a href="#contact" data-translate="contact">Contact</a></li>
+          <li class="language-selector">
+            <select id="languageSelect" class="language-select">
+              <option value="en">EN</option>
+              <option value="fr">FR</option>
+              <option value="de">DE</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="fade-in" data-translate="hero_title">Do You Want to Delete Your Digital Footprint? Yes? Then you're exactly at the right place!</h1>
+      <p class="fade-in" data-translate="hero_subtitle">At CyberCycle, we take care of your IT security needs</p>
+      <p class="fade-in" data-translate="hero_description">including deleting your digital footprint. We wipe all traces so you don't have to worry. Just email us and tell us what you need — we'll manage it for you.</p>
+      <a href="#services" class="btn" data-translate="explore_services">Explore Services</a>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2 data-translate="services_title">Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3 data-translate="service_1_title">Service xxx</h3>
+        <p data-translate="service_1_desc">Secure your xyz with our xyz service we do our shit in 3 times.</p>
+      </div>
+      <div class="card">
+        <h3 data-translate="service_2_title">service xxx</h3>
+        <p data-translate="service_2_desc">bla bla bla second service xyz with xxx technology</p>
+      </div>
+      <div class="card">
+        <h3 data-translate="service_3_title">last service</h3>
+        <p data-translate="service_3_desc">Identify vulnerabilities blablabla</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2 data-translate="about_title">About Us</h2>
+    <p data-translate="about_desc">At CyberCycle, we are dedicated to providing top-tier cybersecurity services. you'll have xyz advantages as a person (particulier) or as a business.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 data-translate="contact_title">Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" data-translate="contact_name" required>
+      <input type="email" id="email" placeholder="Your Email" data-translate="contact_email" required>
+      <textarea id="message" placeholder="Your Message" data-translate="contact_message" required></textarea>
+      <button type="submit" class="btn" data-translate="contact_submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p data-translate="footer_text">&copy; 2024 CyberCycle. All rights reserved.</p>
+  </footer>
+
+  <script src="background.js"></script>
+</body>
+</html>
