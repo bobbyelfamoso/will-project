@@ -13,7 +13,7 @@ body {
   background: #121212;
   padding: 15px 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;  /* logo à gauche, menu/langues à droite */
   align-items: center;
   position: fixed;
   width: 100%;
@@ -233,11 +233,19 @@ body {
 .contact input,
 .contact textarea {
   margin-bottom: 15px;
-  padding: 10px;
-  border: 1px solid #2a2a2a;
+  padding: 12px;
+  border: 1px solid #444;       /* encadré plus visible */
   border-radius: 5px;
   background: #1a1a1a;
   color: #e0e0e0;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #00c6ff;
+  box-shadow: 0 0 8px rgba(0,198,255,0.5);
+  outline: none;
 }
 
 .contact button {
