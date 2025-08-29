@@ -266,3 +266,20 @@ body {
   border-top: 1px solid #2a2a2a;
   font-size: 14px;
 }
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+  .hero-content h1 {
+  font-size: 20px;          /* un peu plus petit */
+  line-height: 1.5;         /* plus aéré */
+  max-width: 90%;           /* pas plus large que 90% de l'écran */
+  margin: 0 auto;           /* centré */
+  word-break: normal;       /* laisse respirer les mots */
+  text-align: center;       /* toujours centré */
+}
+
+  .hero-content p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+}
