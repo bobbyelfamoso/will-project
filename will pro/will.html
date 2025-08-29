@@ -9,7 +9,7 @@
         <link rel="icon" href="cybercycle.png" type="image/png" sizes="48x48">
         <link rel="apple-touch-icon" href="cybercycle.png" sizes="180x180">
         <title>CyberCycle</title>
-  <link rel="stylesheet" href="background.css">
+  <link rel="stylesheet" href="will.css">
 </head>
 <body>
   <header class="header">
@@ -70,24 +70,27 @@
 </section>
 
   <section id="about" class="about">
-    <h2 data-translate="about_title">About Us</h2>
-    <p data-translate="about_desc">At CyberCycle, we are dedicated to providing top-tier cybersecurity services. you'll have xyz advantages as a person (particulier) or as a business.</p>
+  <h2 data-translate="about_title">About Us</h2>
+  <p data-translate="about_desc">
+    At CyberCycle, we are dedicated to providing top-tier cybersecurity services.
+  </p>
   </section>
 
   <section id="contact" class="contact">
     <h2 data-translate="contact_title">Contact Us</h2>
-    <form id="contactForm">
-      <input type="text" id="name" placeholder="Your Name" data-translate="contact_name" required>
-      <input type="email" id="email" placeholder="Your Email" data-translate="contact_email" required>
-      <textarea id="message" placeholder="Your Message" data-translate="contact_message" required></textarea>
-      <button type="submit" class="btn" data-translate="contact_submit">Send Message</button>
-    </form>
+    <form action="mailto:dickemuki@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+</form>
+
   </section>
 
   <footer class="footer">
     <p data-translate="footer_text">&copy; 2024 CyberCycle. All rights reserved.</p>
   </footer>
 
-  <script src="background.js"></script>
+  <script src="will.js"></script>
 </body>
 </html>

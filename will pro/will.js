@@ -9,14 +9,14 @@ const translations = {
     hero_description: "including deleting your digital footprint. We wipe all traces so you don't have to worry. Just email us and tell us what you need — we'll manage it for you.",
     explore_services: "Explore Services",
     services_title: "Our Services",
-    service_1_title: "Service xxx",
-    service_1_desc: "Secure your xyz with our xyz service we do our shit in 3 times.",
-    service_2_title: "service xxx",
-    service_2_desc: "bla bla bla second service xyz with xxx technology",
-    service_3_title: "last service",
-    service_3_desc: "Identify vulnerabilities blablabla",
+    service_1_title: "Digital Print Deletion",
+    service_1_desc: "We help you erase unwanted digital traces, ensuring your online presence is cleaned and your privacy protected.",
+    service_2_title: "Digital Footprint Mapping",
+    service_2_desc: "We analyze and map your digital footprint across platforms, giving you a clear picture of your exposure and risks.",
+    service_3_title: "Any IT Related Request",
+    service_3_desc: "From cybersecurity concerns to general IT support, we provide tailored solutions to meet your specific needs.",
     about_title: "About Us",
-    about_desc: "At CyberCycle, we are dedicated to providing top-tier cybersecurity services. you'll have xyz advantages as a person (particulier) or as a business.",
+    about_desc: "At CyberCycle, we are dedicated to providing top-tier cybersecurity services. Whether you are an individual or a business, you will benefit from enhanced digital protection, tailored advice, and peace of mind.",
     contact_title: "Contact Us",
     contact_name: "Your Name",
     contact_email: "Your Email",
@@ -33,14 +33,14 @@ const translations = {
     hero_description: "notamment en supprimant votre empreinte numérique. Nous effaçons toutes les traces pour votre tranquillité. Envoyez-nous simplement un e-mail et dites-nous ce dont vous avez besoin - nous nous en occupons pour vous.",
     explore_services: "Découvrir nos services",
     services_title: "Nos Services",
-    service_1_title: "Service xxx",
-    service_1_desc: "Sécurisez votre xyz avec notre service xyz en 3 étapes.",
-    service_2_title: "service xxx",
-    service_2_desc: "bla bla bla second service xyz avec la technologie xxx",
-    service_3_title: "dernier service",
-    service_3_desc: "Identifier les vulnérabilités blablabla",
+    service_1_title: "Suppression d’empreinte numérique",
+    service_1_desc: "Nous vous aidons à effacer les traces numériques indésirables, pour garantir votre confidentialité et votre sérénité en ligne.",
+    service_2_title: "Cartographie d’empreinte numérique",
+    service_2_desc: "Nous analysons et cartographions vos traces numériques pour vous donner une vision claire de votre exposition et des risques.",
+    service_3_title: "Toute demande liée à l’informatique",
+    service_3_desc: "De la cybersécurité au support IT général, nous proposons des solutions adaptées à vos besoins spécifiques.",
     about_title: "À Propos de Nous",
-    about_desc: "Chez CyberCycle, nous nous consacrons à fournir des services de cybersécurité de premier ordre. Vous aurez xyz avantages en tant que particulier ou entreprise.",
+    about_desc: "Chez CyberCycle, nous nous consacrons à fournir des services de cybersécurité de premier ordre. Que vous soyez un particulier ou une entreprise, vous bénéficierez d’une protection renforcée, de conseils personnalisés et d’une tranquillité d’esprit.",
     contact_title: "Contactez-nous",
     contact_name: "Votre Nom",
     contact_email: "Votre Email",
@@ -57,14 +57,14 @@ const translations = {
     hero_description: "einschließlich der Löschung Ihrer digitalen Spuren. Wir löschen alle Spuren, damit Sie sich keine Sorgen machen müssen. Senden Sie uns einfach eine E-Mail und teilen Sie uns mit, was Sie brauchen - wir kümmern uns darum.",
     explore_services: "Dienste entdecken",
     services_title: "Unsere Dienste",
-    service_1_title: "Service xxx",
-    service_1_desc: "Sichern Sie Ihr xyz mit unserem xyz-Service in 3 Schritten.",
-    service_2_title: "service xxx",
-    service_2_desc: "bla bla bla zweiter Service xyz mit xxx Technologie",
-    service_3_title: "letzter Service",
-    service_3_desc: "Schwachstellen identifizieren blablabla",
+    service_1_title: "Digitale Spuren löschen",
+    service_1_desc: "Wir helfen Ihnen, unerwünschte digitale Spuren zu löschen, damit Ihre Online-Präsenz sauber und Ihre Privatsphäre geschützt bleibt.",
+    service_2_title: "Digitale Fußabdrücke kartieren",
+    service_2_desc: "Wir analysieren und kartieren Ihre digitalen Spuren auf allen Plattformen, um Ihnen ein klares Bild Ihrer Risiken zu geben.",
+    service_3_title: "Alle IT-bezogenen Anfragen",
+    service_3_desc: "Von Cybersicherheitsfragen bis hin zu allgemeinem IT-Support – wir bieten maßgeschneiderte Lösungen für Ihre Bedürfnisse.",
     about_title: "Über Uns",
-    about_desc: "Bei CyberCycle sind wir darauf spezialisiert, erstklassige Cybersicherheitsdienste anzubieten. Sie erhalten xyz Vorteile als Privatperson oder Unternehmen.",
+    about_desc: "Bei CyberCycle sind wir darauf spezialisiert, erstklassige Cybersicherheitsdienste anzubieten. Ob privat oder geschäftlich – Sie profitieren von verstärktem Schutz, maßgeschneiderter Beratung und digitaler Sicherheit.",
     contact_title: "Kontaktieren Sie uns",
     contact_name: "Ihr Name",
     contact_email: "Ihre E-Mail",
@@ -111,40 +111,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Handle form submission
-  const form = document.getElementById('contactForm');
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-
-    if (name && email && message) {
-      const currentLang = document.getElementById('languageSelect').value;
-      const successMessage = {
-        en: `Thank you, ${name}! Your message has been sent.`,
-        fr: `Merci, ${name}! Votre message a été envoyé.`,
-        de: `Danke, ${name}! Ihre Nachricht wurde gesendet.`
-      };
-      alert(successMessage[currentLang]);
-      form.reset();
-    } else {
-      const errorMessage = {
-        en: 'Please fill in all fields.',
-        fr: 'Veuillez remplir tous les champs.',
-        de: 'Bitte füllen Sie alle Felder aus.'
-      };
-      alert(errorMessage[currentLang]);
-    }
-  });
+  // ⚠️ Form handling disabled (mailto: does the job)
+  // Nothing here, mailto: will directly open the user's email client
 });
-/* Script à ajouter dans votre fichier JavaScript */
+
+/* Scroll animations */
 function handleScroll() {
   const sections = document.querySelectorAll('.services, .about, .contact');
   
   sections.forEach(section => {
     const rect = section.getBoundingClientRect();
-    const isVisible = rect.top <= window.innerHeight * 0.75;
+    const isVisible = rect.top <= window.innerHeight * 0.85;
     
     if (isVisible) {
       section.classList.add('visible');
@@ -152,26 +129,20 @@ function handleScroll() {
   });
 }
 
-// Écouter l'événement de scroll
 window.addEventListener('scroll', handleScroll);
-
-// Vérifier au chargement initial
 document.addEventListener('DOMContentLoaded', handleScroll);
 
-
-// Ajouter dans votre background.js
+/* Burger menu */
 document.addEventListener('DOMContentLoaded', function() {
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav');
   const navLinks = document.querySelectorAll('.nav a');
 
-  // Toggle menu burger
   burger.addEventListener('click', () => {
     burger.classList.toggle('active');
     nav.classList.toggle('active');
   });
 
-  // Fermer le menu au clic sur un lien
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
       burger.classList.remove('active');
@@ -179,7 +150,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Fermer le menu au clic en dehors
   document.addEventListener('click', (e) => {
     if (!nav.contains(e.target) && !burger.contains(e.target)) {
       burger.classList.remove('active');
@@ -188,7 +158,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// Gestion du resize de la fenêtre
 window.addEventListener('resize', () => {
   if (window.innerWidth > 768) {
     const burger = document.querySelector('.burger');
