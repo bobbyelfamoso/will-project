@@ -5,7 +5,7 @@ const translations = {
     about: "About",
     contact: "Contact",
     hero_title: "Do You Want to Delete Your Digital Footprint? Yes? Then you're exactly at the right place!",
-    hero_subtitle: "At CyberCycle, we take care of your IT security needs",
+    hero_subtitle: "At CyberCircle, we take care of your IT security needs",
     hero_description: "including deleting your digital footprint. We wipe all traces so you don't have to worry. Just email us and tell us what you need — we'll manage it for you.",
     explore_services: "Explore Services",
     services_title: "Our Services",
@@ -16,20 +16,20 @@ const translations = {
     service_3_title: "Any IT Related Request",
     service_3_desc: "From cybersecurity concerns to general IT support, we provide tailored solutions to meet your specific needs.",
     about_title: "About Us",
-    about_desc: "At CyberCycle, we are dedicated to providing top-tier cybersecurity services. Whether you are an individual or a business, you will benefit from enhanced digital protection, tailored advice, and peace of mind.",
+    about_desc: "At CyberCircle, we are dedicated to providing top-tier cybersecurity services. Whether you are an individual or a business, you will benefit from enhanced digital protection, tailored advice, and peace of mind.",
     contact_title: "Contact Us",
     contact_name: "Your Name",
     contact_email: "Your Email",
     contact_message: "Your Message",
     contact_submit: "Send Message",
-    footer_text: "© 2024 CyberCycle. All rights reserved."
+    footer_text: "© 2024 CyberCircle. All rights reserved."
   },
   fr: {
     services: "Services",
     about: "À propos",
     contact: "Contact",
     hero_title: "Vous voulez effacer votre empreinte numérique ? Oui ? Alors vous êtes au bon endroit !",
-    hero_subtitle: "Chez CyberCycle, nous prenons soin de vos besoins en sécurité informatique",
+    hero_subtitle: "Chez CyberCircle, nous prenons soin de vos besoins en sécurité informatique",
     hero_description: "notamment en supprimant votre empreinte numérique. Nous effaçons toutes les traces pour votre tranquillité. Envoyez-nous simplement un e-mail et dites-nous ce dont vous avez besoin - nous nous en occupons pour vous.",
     explore_services: "Découvrir nos services",
     services_title: "Nos Services",
@@ -40,20 +40,20 @@ const translations = {
     service_3_title: "Toute demande liée à l’informatique",
     service_3_desc: "De la cybersécurité au support IT général, nous proposons des solutions adaptées à vos besoins spécifiques.",
     about_title: "À Propos de Nous",
-    about_desc: "Chez CyberCycle, nous nous consacrons à fournir des services de cybersécurité de premier ordre. Que vous soyez un particulier ou une entreprise, vous bénéficierez d’une protection renforcée, de conseils personnalisés et d’une tranquillité d’esprit.",
+    about_desc: "Chez CyberCircle, nous nous consacrons à fournir des services de cybersécurité de premier ordre. Que vous soyez un particulier ou une entreprise, vous bénéficierez d’une protection renforcée, de conseils personnalisés et d’une tranquillité d’esprit.",
     contact_title: "Contactez-nous",
     contact_name: "Votre Nom",
     contact_email: "Votre Email",
     contact_message: "Votre Message",
     contact_submit: "Envoyer",
-    footer_text: "© 2024 CyberCycle. Tous droits réservés."
+    footer_text: "© 2024 CyberCircle. Tous droits réservés."
   },
   de: {
     services: "Dienste",
     about: "Über uns",
     contact: "Kontakt",
     hero_title: "Möchten Sie Ihre digitalen Spuren löschen? Ja? Dann sind Sie hier genau richtig!",
-    hero_subtitle: "Bei CyberCycle kümmern wir uns um Ihre IT-Sicherheitsbedürfnisse",
+    hero_subtitle: "Bei CyberCircle kümmern wir uns um Ihre IT-Sicherheitsbedürfnisse",
     hero_description: "einschließlich der Löschung Ihrer digitalen Spuren. Wir löschen alle Spuren, damit Sie sich keine Sorgen machen müssen. Senden Sie uns einfach eine E-Mail und teilen Sie uns mit, was Sie brauchen - wir kümmern uns darum.",
     explore_services: "Dienste entdecken",
     services_title: "Unsere Dienste",
@@ -64,13 +64,13 @@ const translations = {
     service_3_title: "Alle IT-bezogenen Anfragen",
     service_3_desc: "Von Cybersicherheitsfragen bis hin zu allgemeinem IT-Support – wir bieten maßgeschneiderte Lösungen für Ihre Bedürfnisse.",
     about_title: "Über Uns",
-    about_desc: "Bei CyberCycle sind wir darauf spezialisiert, erstklassige Cybersicherheitsdienste anzubieten. Ob privat oder geschäftlich – Sie profitieren von verstärktem Schutz, maßgeschneiderter Beratung und digitaler Sicherheit.",
+    about_desc: "Bei CyberCircle sind wir darauf spezialisiert, erstklassige Cybersicherheitsdienste anzubieten. Ob privat oder geschäftlich – Sie profitieren von verstärktem Schutz, maßgeschneiderter Beratung und digitaler Sicherheit.",
     contact_title: "Kontaktieren Sie uns",
     contact_name: "Ihr Name",
     contact_email: "Ihre E-Mail",
     contact_message: "Ihre Nachricht",
     contact_submit: "Nachricht senden",
-    footer_text: "© 2024 CyberCycle. Alle Rechte vorbehalten."
+    footer_text: "© 2024 CyberCircle. Alle Rechte vorbehalten."
   }
 };
 
